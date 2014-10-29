@@ -6,22 +6,23 @@
   <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/06/Speisesaal05.jpg"></img></div>
   <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/06/Speisesaal07.jpg"></img></div>
   <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/06/Speisesaal08.jpg"></img></div>
+  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/10/weihnachtsfeier-hero.jpg"></img></div>
 </div>
 <?php else: ?>
   <?php if ('' != get_the_post_thumbnail()): ?>
     <div class="keyvisual">
      <div class="slides"><?php echo get_the_post_thumbnail( $post_id, $size, $attr ); ?></div>
-   </div>	
+   </div>
  <?php else: ?>
   <div class="nokeyvisual">
-  </div>	
+  </div>
   <?php endif ?>
 <?php endif ?>
 
 <div class="pageheadline">
 	<div class="pheadline-inside">
   <?php if (is_page(array('speisesaal'))): ?>
-    <img src="http://dah-bremerhaven.de/wp-content/uploads/2012/11/speisesaal_logo.png" height="2036" width="149" class="speiselogo" alt="">   
+    <img src="http://dah-bremerhaven.de/wp-content/uploads/2012/11/speisesaal_logo.png" height="2036" width="149" class="speiselogo" alt="">
   <?php endif ?>
 
 		<h1><?php the_title(); ?></h1>
@@ -58,7 +59,7 @@
 
             <?php the_content(); ?>
 
-            <?php $children = get_pages( 
+            <?php $children = get_pages(
     array(
         'sort_column' => 'menu_order',
         'sort_order' => 'ASC',
@@ -66,7 +67,7 @@
         'parent' => $post->ID,
     ));
 
-foreach( $children as $post ) { 
+foreach( $children as $post ) {
         setup_postdata( $post ); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="subarticle" id="<?php the_ID(); ?>">
@@ -78,16 +79,16 @@ foreach( $children as $post ) {
 <?php } ?>
 
             <br class="clear">
-            
+
             <?php edit_post_link(); ?>
-            
+
         </article>
         <!-- /article -->
-        
+
     <?php endwhile; ?>
-    
+
 <?php else: ?>
-    
+
     <!-- article -->
     <article>
 
@@ -95,7 +96,7 @@ foreach( $children as $post ) {
 
     </article>
     <!-- /article -->
-    
+
 <?php endif; ?>
 
 </section>
