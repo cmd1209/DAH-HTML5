@@ -1,6 +1,6 @@
 <?php
 /* Template Name: start
-*/ 
+*/
 ?>
 <?php get_header(); ?>
 
@@ -13,10 +13,10 @@
 	<!-- section -->
 	<section role="main" class="startfields">
 
-	<?php the_content(); ?>				
+	<?php the_content(); ?>
 
 <br class="clear">
-	
+
 	</section>
 	<!-- /section -->
 

@@ -1,204 +1,193 @@
-.startpopups{
-  position: absolute;
-  width: calc(100% + 40px);
-  left:-20px;
-  top: -20px;
-  z-index: 100;
+// .startpopups{
+//   position: absolute;
+//   width: calc(100% + 40px);
+//   left:-20px;
+//   top: -20px;
+//   z-index: 100;
 
-    @media only screen and (max-width:1024px) {
-    width: 100%;
-    position: relative;
-    left: 0;
-    top: 0;
-  }
-  .grid{
-    width: 100%;
-  }
-  .panel-grid{
-    margin:0;
-    width: 100%;
-  }
-  .panel-grid-cell{
-    h3{
-      font-size: 1.2em;
-      margin-top: 10px;
-      margin-bottom: 8px;
-      line-height: 1em;
-    }
-    h3 > a{
-      font-family: 'taz_semilightregular', Arial, sans-serif;
-      color: $gold;
-    }
-    p{
-      font-family: 'taz_lightregular', Arial, sans-serif;
-      font-size: 1em;
-      margin-top: 0px;
-      line-height: 1.20em;
-      margin-bottom: 0.75em;
-    }
-    a{
-    font:300 1em'taz_semiboldregular', Arial, sans-serif;
-    color: $gold;
-    }
-    a:hover{
-      background-color: $gold;
-      color: white;
-    }
-    .widget{
-  -moz-box-shadow:    inset -10px -10px 25px 0 rgb(180,180,180);
-   -webkit-box-shadow: inset -10px -10px 25px 0 rgb(180,180,180);
-   box-shadow:         inset -10px -10px 25px 0 rgb(180,180,180);
+//     @media only screen and (max-width:1024px) {
+//     width: 100%;
+//     position: relative;
+//     left: 0;
+//     top: 0;
+//   }
+//   .grid{
+//     width: 100%;
+//   }
+//   .panel-grid{
+//     margin:0;
+//     width: 100%;
+//   }
+//   .panel-grid-cell{
+//     h3{
+//       font-size: 1.2em;
+//       margin-top: 10px;
+//       margin-bottom: 8px;
+//       line-height: 1em;
+//     }
+//     h3 > a{
+//       font-family: 'taz_semilightregular', Arial, sans-serif;
+//       color: $gold;
+//     }
+//     p{
+//       font-family: 'taz_lightregular', Arial, sans-serif;
+//       font-size: 1em;
+//       margin-top: 0px;
+//       line-height: 1.20em;
+//       margin-bottom: 0.75em;
+//     }
+//     a{
+//     font:300 1em'taz_semiboldregular', Arial, sans-serif;
+//     color: $gold;
+//     }
+//     a:hover{
+//       background-color: $gold;
+//       color: white;
+//     }
+//     .widget{
+//   -moz-box-shadow:    inset -10px -10px 25px 0 rgb(180,180,180);
+//    -webkit-box-shadow: inset -10px -10px 25px 0 rgb(180,180,180);
+//    box-shadow:         inset -10px -10px 25px 0 rgb(180,180,180);
 
-    padding: 0px 20px 10px 20px;
-    background-color: white;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    max-height: 130px;
-    overflow: hidden;
-    -webkit-transition: max-height 0.2s;
-    -moz-transition: max-height 0.2s;
-    -o-transition: max-height 0.2s;
-    transition: max-height 0.2s;
+//     padding: 0px 20px 10px 20px;
+//     background-color: white;
+//     -webkit-border-radius: 2px;
+//     -moz-border-radius: 2px;
+//     border-radius: 2px;
+//     max-height: 130px;
+//     overflow: hidden;
+//     -webkit-transition: max-height 0.2s;
+//     -moz-transition: max-height 0.2s;
+//     -o-transition: max-height 0.2s;
+//     transition: max-height 0.2s;
 
-    @media only screen and (max-width:1024px) {
-      padding: 10px 20px!important;
-      max-height: 100%;
-      -webkit-border-radius: 0px;
-      -moz-border-radius: 0px;
-      border-radius: 0px;
-      -moz-box-shadow:    none;
-      -webkit-box-shadow: none;
-      box-shadow:         none;
-      }
-    }
-    .widget:hover{
-      max-height: 999px;
-      -webkit-transition: max-height 0.2s;
-      -moz-transition: max-height 0.2s;
-      -o-transition: max-height 0.2s;
-      transition: max-height 0.2s;
-      @media only screen and (max-width:1024px) {
-      max-height: 100%;
-      min-height: 100%;
-      }
-    }
-  }
+//     @media only screen and (max-width:1024px) {
+//       padding: 10px 20px!important;
+//       max-height: 100%;
+//       -webkit-border-radius: 0px;
+//       -moz-border-radius: 0px;
+//       border-radius: 0px;
+//       -moz-box-shadow:    none;
+//       -webkit-box-shadow: none;
+//       box-shadow:         none;
+//       }
+//     }
+//     .widget:hover{
+//       max-height: 999px;
+//       -webkit-transition: max-height 0.2s;
+//       -moz-transition: max-height 0.2s;
+//       -o-transition: max-height 0.2s;
+//       transition: max-height 0.2s;
+//       @media only screen and (max-width:1024px) {
+//       max-height: 100%;
+//       min-height: 100%;
+//       }
+//     }
+//   }
 
 
-  .panel-grid-cell:hover{
-    max-height: 850px;
-    -webkit-transition: max-height 0.75s;
-    -moz-transition: max-height 0.75s;
-    -o-transition: max-height 0.75s;
-    transition: max-height 0.75s;
-  }
-  .panel-grid-cell:first-child{
+//   .panel-grid-cell:hover{
+//     max-height: 850px;
+//     -webkit-transition: max-height 0.75s;
+//     -moz-transition: max-height 0.75s;
+//     -o-transition: max-height 0.75s;
+//     transition: max-height 0.75s;
+//   }
+//   .panel-grid-cell:first-child{
 
-    @media only screen and (max-width:1024px) {
-      margin-right:0px;
-    }
-  }
-  .panel-grid-cell:last-child{
+//     @media only screen and (max-width:1024px) {
+//       margin-right:0px;
+//     }
+//   }
+//   .panel-grid-cell:last-child{
 
-    @media only screen and (max-width:1024px) {
-      margin-left:0px;
-    }
-  }
+//     @media only screen and (max-width:1024px) {
+//       margin-left:0px;
+//     }
+//   }
+// }
+
+
+
+//   .popspacer{
+//     height:120px;
+//     position:relative;
+//     overflow:visible;
+//         @media only screen and (max-width:1024px) {
+//           height: auto;
+//           overflow: hidden;
+//           background-color: white;
+//     }
+//   }
+
+
+.row{
+  padding-bottom: 2em;
+  overflow: hidden;
+  display: block;
 }
 
 
-
-  .popspacer{
-    height:120px;
-    position:relative;
-    overflow:visible;
-        @media only screen and (max-width:1024px) {
-          height: auto;
-          overflow: hidden;
-          background-color: white;
-    }
-  }
-
-
-
-
-
 .startfields{
-  padding: 10px 10px 0 10px;
+  padding: 20px;
   position: relative;
   width: 100%;
   z-index: 100;
+  overflow: hidden;
   background-color: white;
-    @media only screen and (max-width:1024px) {
-    width: 100%;
-    position: relative;
-  }
-  .grid{
-    width: 100%;
-  }
-  .panel-grid{
-    margin:0;
-    margin-bottom:-20px;
-    width: 100%;
-  }
-  .panel-grid-cell{
-    figure{
-      padding-left:5px;
-      float: right;
-      width: 33.333%;
-        @media only screen and (max-width:780px) {
-          width: 25%;
-        }
-      img{
-        width: 100%;
-      }
+  h3{
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    line-height: 1.1em;
+    margin-top: 0;
+    @media only screen and (max-width:768px) {
+    font-size: 1.7em;
     }
-    .startthumb{
-      width:33%;
-      height: auto;
-      float:right;
-      margin:0 0 10px 10px;
-          @media only screen and (max-width:1024px) {
-          width: 100%;
-          height: auto;
-        }
-          @media only screen and (max-width:780px) {
-          display: none;
-        }
-    }
-    h3{
+  }
+  h3 > a{
+    font-family: 'taz_semilightregular', Arial, sans-serif;
+    color: $gold;
+  }
+  figure{
+    float: right;
+    padding: 0 0 1em 1em;
+  }
+  p{
+    font-family: 'taz_lightregular', Arial, sans-serif;
+    font-size: 0.95em;
+    margin-top: 0px;
+    line-height: 1.20em;
+    margin-bottom: 0.75em;
+    @media only screen and (max-width:768px) {
       font-size: 1.1em;
-      margin-top: 10px;
-      margin-bottom: 8px;
-      line-height: 1.1em;
     }
-    h3 > a{
-      font-family: 'taz_semilightregular', Arial, sans-serif;
-      color: $gold;
-    }
-    p{
-      font-family: 'taz_lightregular', Arial, sans-serif;
-      font-size: 0.95em;
-      margin-top: 0px;
-      line-height: 1.20em;
-      margin-bottom: 0.75em;
-    }
-    a{
+  }
+  a{
     font:300 1em'taz_semiboldregular', Arial, sans-serif;
     color: $gold;
-    }
-    a:hover{
-      background-color: $gold;
-      color: white;
-    }
-    .mehrlesen{
-      display: block;
-      margin-bottom:20px;
-    }
-    .widget{
-    padding: 0px 10px;
-    overflow: hidden;
-    }
+  }
+  a:hover{
+    background-color: $gold;
+    color: white;
+  }
+}
+.links{
+  padding: 0 1em 0 0;
+}
+.mitte{
+  padding: 0 0.5em 0 0.5em;
+}
+.rechts{
+  padding: 0 0 0 1em;
+}
+.links, .mitte, .rechts{
+  float: left;
+  width: 33.333%;
+  display: block;
+  overflow: hidden;
+  @media only screen and (max-width:1024px) {
+    padding: 2em 0;
+    float: none;
+    width: 100%;
   }
 }

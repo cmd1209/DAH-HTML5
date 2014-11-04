@@ -6,7 +6,8 @@
   <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/06/Speisesaal05.jpg"></img></div>
   <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/06/Speisesaal07.jpg"></img></div>
   <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/06/Speisesaal08.jpg"></img></div>
-  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/10/weihnachtsfeier-hero.jpg"></img></div>
+  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/10/weihnachtsfeier-hero2.jpg"></img></div>
+  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/10/NussknackerJanMeier3.jpg"></img></div>
 </div>
 <?php else: ?>
   <?php if ('' != get_the_post_thumbnail()): ?>
