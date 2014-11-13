@@ -133,7 +133,6 @@
   }
 }
 
-
 .startfields{
   padding: 20px;
   position: relative;
@@ -156,7 +155,7 @@
   }
   figure{
     float: right;
-    max-width: 120px;
+    max-width: 130px;
     padding: 0 0 0.7em 1em;
     a{
       display: block;
@@ -213,4 +212,118 @@
       border: none;
     }
   }
+}
+.post_row{
+  width: 100%;
+  clear: both;
+}
+.newslist{
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  margin-bottom: 40px;
+  @media only screen and (max-width:1024px) {
+    width: 100%;
+  }
+  h3{
+    font-size: 1.25em;
+  }
+  figure{
+    float: left;
+    max-width: 200px;
+    padding: 0 15px 0 0;
+  }
+}
+.newslist:nth-child(odd){
+  padding-right: 10px;
+}
+.newslist:nth-child(even){
+  padding-left: 10px;
+}
+.maingrid{
+  display: table;
+}
+.maingrid{
+  width: 85%;
+  display: table-cell;
+  vertical-align: top;
+  @media only screen and (max-width:1024px) {
+    width: 75%;
+  }
+}
+.goldsidebar{
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 12px;
+  background-color: $gold;
+  overflow: hidden;
+  color: white;
+  figure{
+    width: 100%;
+    height: auto;
+    padding:0;
+    margin-bottom: 12px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  h3{
+    color: white;
+    font-size: 1.25em;
+    margin: 0.5em 0;
+  }
+  a{
+    color: white;
+  }
+  p{
+    color: white;
+    font-size: 0.90em;
+  }
+}
+.features{
+  border-right: 12px solid white;
+  border-left:12px solid white;
+  width: 100%;
+  overflow: hidden;
+}
+.feature{
+  width: 50%;
+  float: left;
+  min-height: 215px;
+  background-repeat: no-repeat;
+  background-size: cover!important;
+  position: relative;
+  .lockup{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    padding: 0.7em 1em 0.25em 0.7em;
+    color: white;
+    width: 100%;
+    background-color: rgba($blue,0.75);
+    h3{
+      margin: 0;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 2px black;
+    }
+    p{
+      font-weight: 400;
+      margin: 0;
+      color: white;
+      text-shadow: 2px 2px 2px black;
+    }
+    a{
+      color: white;
+      &:hover{
+        color: $red;
+      }
+    }
+  }
+}
+.feature:nth-child(odd){
+  border-right: 6px solid white;
+}
+.feature:nth-child(even){
+  border-left: 6px solid white;
 }
