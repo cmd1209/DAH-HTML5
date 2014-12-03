@@ -178,9 +178,9 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-1',
+        'name' => __('Sidebar Links 1', 'html5blank'),
+        'description' => __('Place all of your Sidebar Links in this Area. They will automatically be added to the sidebar.', 'html5blank'),
+        'id' => 'sidebar_links_01',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
@@ -189,9 +189,9 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 2
     register_sidebar(array(
-        'name' => __('Widget Area 2', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-2',
+        'name' => __('Sidebar Links 2', 'html5blank'),
+        'description' => __('Place all of your Sidebar Links in this Area. They will automatically be added to the sidebar.', 'html5blank'),
+        'id' => 'sidebar_links_02',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',

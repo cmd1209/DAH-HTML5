@@ -40,15 +40,15 @@
 
 
 			<header class="header" role="banner">
-
+			<?php get_template_part('searchform'); ?>
 
 					<nav class="nav" role="navigation">
-						<?php wp_nav_menu( array('menu' => 'service menu' )); ?>
+<!-- 						<?php wp_nav_menu( array('menu' => 'service menu' )); ?> -->
 						<?php wp_nav_menu( array('menu' => 'main nav' )); ?>
 					</nav>
 
 
-			<?php get_template_part('searchform'); ?>
 			</header>
 		<div class="content">  <!-- start content area -->
-			<!-- /header -->
+
+		<!-- /header -->

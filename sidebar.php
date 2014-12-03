@@ -1,15 +1,12 @@
 <!-- sidebar -->
-<aside class="sidebar" role="complementary">
 
-	<?php get_template_part('searchform'); ?>
-    		
+
 	<div class="sidebar-widget">
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
+		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar_links_01')) ?>
 	</div>
-	
+
 	<div class="sidebar-widget">
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
+		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar_links_02')) ?>
 	</div>
-		
-</aside>
+
 <!-- /sidebar -->

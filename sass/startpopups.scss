@@ -241,6 +241,7 @@
   padding-left: 10px;
 }
 .maingrid{
+  position: relative;
   display: table;
 }
 .maingrid{
@@ -248,7 +249,7 @@
   display: table-cell;
   vertical-align: top;
   @media only screen and (max-width:1024px) {
-    width: 75%;
+    width: 100%;
   }
 }
 .goldsidebar{
@@ -258,15 +259,13 @@
   background-color: $gold;
   overflow: hidden;
   color: white;
-  figure{
+  @media only screen and (max-width:1024px) {
+    display: none;
+  }
+  img{
     width: 100%;
     height: auto;
-    padding:0;
     margin-bottom: 12px;
-    img{
-      width: 100%;
-      height: auto;
-    }
   }
   h3{
     color: white;
@@ -275,6 +274,9 @@
   }
   a{
     color: white;
+    &:hover{
+      opacity: 0.75;
+    }
   }
   p{
     color: white;
@@ -282,10 +284,10 @@
   }
 }
 .features{
-  border-right: 12px solid white;
-  border-left:12px solid white;
   width: 100%;
   overflow: hidden;
+  padding: 12px;
+  background-color: white;
 }
 .feature{
   width: 50%;
@@ -294,6 +296,16 @@
   background-repeat: no-repeat;
   background-size: cover!important;
   position: relative;
+  border-bottom: 12px solid white;
+  .biglink{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    &:hover{
+      background-color: rgba($gold,.50);
+    }
+  }
   .lockup{
     overflow: hidden;
     position: absolute;
@@ -301,17 +313,16 @@
     padding: 0.7em 1em 0.25em 0.7em;
     color: white;
     width: 100%;
-    background-color: rgba($blue,0.75);
+    background-color: rgba($gold,0.93);
     h3{
       margin: 0;
       text-transform: uppercase;
-      text-shadow: 2px 2px 2px black;
+      color: white;
     }
     p{
       font-weight: 400;
       margin: 0;
       color: white;
-      text-shadow: 2px 2px 2px black;
     }
     a{
       color: white;
@@ -326,4 +337,23 @@
 }
 .feature:nth-child(even){
   border-left: 6px solid white;
+}
+.banner{
+  background-color: $red;
+  position: absolute;
+  top: 410px;
+  right: -25px;
+  width: 40%;
+  text-align: center;
+  padding:0;
+  z-index: 9999;
+  transform: rotate(-5deg) skew(-5deg);
+  @media only screen and (max-width:1140px) {
+    top: 220px;
+  }
+  h4{
+    color: white;
+    font-size: 1em;
+    margin: 5px 0;
+  }
 }
