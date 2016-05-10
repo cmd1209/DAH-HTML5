@@ -1,16 +1,18 @@
 		</div>  <!-- end content area -->
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-			<div class="grid">
-				<div class="grid-80">
+                <div class="col col85">
 					<?php wp_nav_menu( array('menu' => 'footer navigation' )); ?>
-				</div>
-				<div class="grid-30">
+
+                </div>
+                <div class="col col15">
 					<figure>
 						<img src="<?php echo get_template_directory_uri(); ?>/art/emya-logo.svg" alt="Logo" width="100%" class="logo-img">
 					</figure>
-				</div>
-			</div>
+                     <a href="http://www.holidaycheck.de/reisetipp-Reiseinformationen+Deutsches+Auswandererhaus-zid_19544.html" style="float: right;padding-right:20px;">
+                        <img src="http://dah-bremerhaven.de/wp-content/uploads/2015/01/holidaycheck.png" alt="Deutsches Auswandererhaus Top Bewertet bei Holidaycheck"  width="75" height="auto">
+                    </a>
+                </div>
 				<div class="col col100">
 				<p class="copyright">
 					&copy; <?php echo date("Y"); ?> Copyright <?php bloginfo('name'); ?>
@@ -18,12 +20,12 @@
 				</div>
 			</footer>
 
-		
+
 		</div>
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
-		
+
 		<!-- analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -42,6 +44,6 @@
     	<script>
       		new UISearch( document.getElementById( 'sb-search' ) );
     	</script>
-	
+
 	</body>
 </html>

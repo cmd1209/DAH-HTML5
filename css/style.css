@@ -64,14 +64,17 @@ textarea {
 h1 {
   font: 400 3.5em 'taz_hair14regular', Arial, sans-serif;
   color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 h1.divisions {
   font: 300 2em 'taz_lightregular', Arial, sans-serif;
   color: #bec0c2;
   text-transform: uppercase;
   text-align: center;
-  background-color: white; }
+  background-color: white;
+
+}
   h1.divisions span {
     position: relative;
     background-color: white;

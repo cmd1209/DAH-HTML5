@@ -24,6 +24,7 @@
 			conditionizr()
 		}()
 		</script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 
 	</head>
 	<body <?php body_class(); ?>>
@@ -44,7 +45,8 @@
 
 					<nav class="nav" role="navigation">
 <!-- 						<?php wp_nav_menu( array('menu' => 'service menu' )); ?> -->
-						<?php wp_nav_menu( array('menu' => 'main nav' )); ?>
+					<?php wp_nav_menu( array('menu' => 'main nav' )); ?>
+<!-- 						<?php wp_nav_menu( array('menu' => '2015-Nav' )); ?> -->
 					</nav>
 
 

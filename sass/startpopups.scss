@@ -1,70 +1,11 @@
-// .startpopups{
-//   position: absolute;
-//   width: calc(100% + 40px);
-//   left:-20px;
-//   top: -20px;
-//   z-index: 100;
-
-//     @media only screen and (max-width:1024px) {
-//     width: 100%;
-//     position: relative;
-//     left: 0;
-//     top: 0;
-//   }
-//   .grid{
-//     width: 100%;
-//   }
-//   .panel-grid{
-//     margin:0;
-//     width: 100%;
-//   }
-//   .panel-grid-cell{
-//     h3{
-//       font-size: 1.2em;
-//       margin-top: 10px;
-//       margin-bottom: 8px;
-//       line-height: 1em;
-//     }
-//     h3 > a{
-//       font-family: 'taz_semilightregular', Arial, sans-serif;
-//       color: $gold;
-//     }
-//     p{
-//       font-family: 'taz_lightregular', Arial, sans-serif;
-//       font-size: 1em;
-//       margin-top: 0px;
-//       line-height: 1.20em;
-//       margin-bottom: 0.75em;
-//     }
-//     a{
-//     font:300 1em'taz_semiboldregular', Arial, sans-serif;
-//     color: $gold;
-//     }
-//     a:hover{
-//       background-color: $gold;
-//       color: white;
-//     }
-//     .widget{
-//   -moz-box-shadow:    inset -10px -10px 25px 0 rgb(180,180,180);
-//    -webkit-box-shadow: inset -10px -10px 25px 0 rgb(180,180,180);
-//    box-shadow:         inset -10px -10px 25px 0 rgb(180,180,180);
-
-//     padding: 0px 20px 10px 20px;
-//     background-color: white;
-//     -webkit-border-radius: 2px;
-//     -moz-border-radius: 2px;
-//     border-radius: 2px;
-//     max-height: 130px;
-//     overflow: hidden;
-//     -webkit-transition: max-height 0.2s;
-//     -moz-transition: max-height 0.2s;
-//     -o-transition: max-height 0.2s;
-//     transition: max-height 0.2s;
-
 .row{
   overflow: hidden;
   display: block;
-  border-bottom: 1px solid $lightsiver;
+  // border-bottom: 1px solid $lightsiver;
+  padding: 1em 0;
+  &:first-child{
+    padding-top: 0;
+  }
   &:last-child{
     border: none;
   }
@@ -86,7 +27,7 @@
     line-height: 1.1em;
     margin-top: 0;
     @media only screen and (max-width:1023px) {
-    font-size: 1.7em;
+    font-size: 1.25em;
     }
   }
   h3 > a{
@@ -94,14 +35,9 @@
     color: $gold;
   }
   figure{
-    float: right;
-    max-width: 130px;
-    padding: 0 0 0.7em 1em;
+    max-width: 100%;
     a{
       display: block;
-    }
-    @media only screen and (max-width:1024px) {
-      max-width: 160px;
     }
   }
   p{
@@ -127,30 +63,45 @@
   }
 }
 .links{
-  padding: 0.75em 0.75em 0.75em 0;
+  padding: 0 0.75em 0 0;
 }
 .mitte{
-  padding: 0.75em 0.75em 0.75em 0.75em;
-  border-left: 1px solid $lightsiver;
-  border-right: 1px solid $lightsiver;
+  padding: 0 0.75em 0 0.75em;
+  // border-left: 1px solid $lightsiver;
+  // border-right: 1px solid $lightsiver;
 }
 .rechts{
-  padding: 0.75em 0 0.75em 0.75em;
+  padding: 0 0 0 0.75em;
 }
 .links, .mitte, .rechts{
   float: left;
   width: 33.333%;
   display: block;
   overflow: hidden;
-  @media only screen and (max-width:1024px) {
-    padding: 1em 0;
+  @media only screen and (max-width:768px) {
+    padding: 10px 0;
     float: none;
     width: 100%;
     border: none;
     border-bottom: 1px solid $lightsiver;
-    &:last-child{
-      border: none;
-    }
+  }
+}
+.fieldimg{
+  width: 30%;
+  @media only screen and (max-width: 768px){
+    width: 20%;
+  }
+  figure{
+    padding: 0;
+    margin: 0;
+  }
+}
+.fieldcontent{
+  padding: 0 0 0 0.5em;
+  width: 70%;
+  @media only screen and (max-width: 768px){
+    width: 80%;
+    padding: 20px 0 0 1em ;
   }
 }
 .post_row{

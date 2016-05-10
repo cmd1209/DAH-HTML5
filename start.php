@@ -4,11 +4,11 @@
 ?>
 <?php get_header(); ?>
 
-<div class="banner coolshadow" style="background-color">
+<!-- <div class="banner coolshadow" style="background-color">
 <h4>Verschenken Sie eine Zeitreise!<br>
 Geschenkgutscheine für das Deutsche Auswandererhaus<br>
 Infos & Bestellung: 0471 – 90 22 00</h4>
-</div>
+</div> -->
 <div class="keyvisual" id="slideshow">
   <div class="slides"><img src="<?php the_field('start-slideshow'); ?>"></img></div>
   <div class="slides"><img src="<?php the_field('start-slideshow2'); ?>"></img></div>
@@ -18,13 +18,18 @@ Infos & Bestellung: 0471 – 90 22 00</h4>
   <section role="main" class="startfields">
 
 <div class="row">
-
     <?php $post_object = get_field('links');
      if( $post_object ): $post = $post_object; setup_postdata( $post );  ?>
     <div class="links">
-      <figure><a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a></figure>
+      <div class="col fieldimg">
+      <figure>
+        <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a>
+      </figure>
+      </div>
+      <div class="col fieldcontent">
       <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
       <p> <?php the_excerpt(); ?> </p>
+      </div>
 <!--       <a href="<?php the_permalink(); ?>">mehr lesen</a> -->
     </div>
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
@@ -39,9 +44,15 @@ Infos & Bestellung: 0471 – 90 22 00</h4>
 
   ?>
     <div class="mitte">
-      <figure><a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a></figure>
+      <div class="col fieldimg">
+      <figure>
+        <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a>
+      </figure>
+      </div>
+      <div class="col fieldcontent">
       <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
       <p> <?php the_excerpt(); ?> </p>
+      </div>
 <!--       <a href="<?php the_permalink(); ?>">mehr lesen</a> -->
     </div>
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
@@ -57,22 +68,38 @@ Infos & Bestellung: 0471 – 90 22 00</h4>
 
   ?>
     <div class="rechts">
-      <figure><a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a></figure>
+      <div class="col fieldimg">
+      <figure>
+        <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a>
+      </figure>
+      </div>
+      <div class="col fieldcontent">
       <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
       <p> <?php the_excerpt(); ?> </p>
+      </div>
 <!--       <a href="<?php the_permalink(); ?>">mehr lesen</a> -->
     </div>
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 <?php endif; ?>
 </div>
+
+
+
+
 <div class="row">
 
     <?php $post_object = get_field('links2');
      if( $post_object ): $post = $post_object; setup_postdata( $post );  ?>
     <div class="links">
-      <figure><a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a></figure>
+      <div class="col fieldimg">
+      <figure>
+        <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a>
+      </figure>
+      </div>
+      <div class="col fieldcontent">
       <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
       <p> <?php the_excerpt(); ?> </p>
+      </div>
 <!--       <a href="<?php the_permalink(); ?>">mehr lesen</a> -->
     </div>
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
@@ -87,9 +114,15 @@ Infos & Bestellung: 0471 – 90 22 00</h4>
 
   ?>
     <div class="mitte">
-      <figure><a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a></figure>
+      <div class="col fieldimg">
+      <figure>
+        <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a>
+      </figure>
+      </div>
+      <div class="col fieldcontent">
       <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
       <p> <?php the_excerpt(); ?> </p>
+      </div>
 <!--       <a href="<?php the_permalink(); ?>">mehr lesen</a> -->
     </div>
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
@@ -105,9 +138,15 @@ Infos & Bestellung: 0471 – 90 22 00</h4>
 
   ?>
     <div class="rechts">
-      <figure><a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a></figure>
+      <div class="col fieldimg">
+      <figure>
+        <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?></a>
+      </figure>
+      </div>
+      <div class="col fieldcontent">
       <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
       <p> <?php the_excerpt(); ?> </p>
+      </div>
 <!--       <a href="<?php the_permalink(); ?>">mehr lesen</a> -->
     </div>
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
