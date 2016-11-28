@@ -1,7 +1,7 @@
 <div class="sonderausstellung shadow">
-	<header>
+	<!-- <header>
 		<h2> <?php echo single_cat_title(); ?> </h2>
-	</header>
+	</header> -->
 	<?php if ('' != get_the_post_thumbnail()): ?>
 		<?php the_post_thumbnail('medium'); ?>
 		<div class="cat-date"> <?php the_field('zeitraum'); ?> </div>

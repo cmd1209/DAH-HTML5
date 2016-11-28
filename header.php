@@ -25,7 +25,6 @@
 		}()
 		</script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
-
 	</head>
 	<body <?php body_class(); ?>>
 		<div class="hub wrapper">
@@ -33,6 +32,15 @@
 		</div>
 		<div class="wrapper">
 			<a class="slidetrigger" href="#">&#9776;</a>
+			<ul class="utility">
+				<li><a class="facebook" title="facebook" href="http://www.facebook.com/pages/Deutsches-Auswandererhaus-Bremerhaven/104480576278946">
+					<img src="<?php echo get_template_directory_uri(); ?>/art/F_icon2.png" alt="facebook">
+				</a>
+				</li>
+				<li><a href="http://www.dah-bremerhaven.de//ENG/english.php" class="english">
+					<img src="<?php echo get_template_directory_uri(); ?>/art/eng-logo3.jpg" alt="english">
+				</a></li>
+			</ul>
 			<div class="logo">
 				<a href="<?php echo home_url(); ?>">
 					<img src="<?php echo get_template_directory_uri(); ?>/art/DAH-Logo.svg" alt="Logo" class="logo-img coolshadow">
@@ -44,6 +52,7 @@
 			<?php get_template_part('searchform'); ?>
 
 					<nav class="nav" role="navigation">
+
 <!-- 						<?php wp_nav_menu( array('menu' => 'service menu' )); ?> -->
 					<?php wp_nav_menu( array('menu' => 'main nav' )); ?>
 <!-- 						<?php wp_nav_menu( array('menu' => '2015-Nav' )); ?> -->

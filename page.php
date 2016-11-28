@@ -1,13 +1,17 @@
 <a href="#" id="oben"></a>
 <?php get_header(); ?>
-
 <?php if (is_page(array('speisesaal'))): ?>
-  <div class="keyvisual" id="slideshow">
-  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/06/Speisesaal05.jpg"></img></div>
+  <div class="speisesaalslide" id="slideshow">
+  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2016/10/Speisesaal10.jpg"></img></div>
+  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2016/10/Speisesaal09.jpg"></img></div>
+  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2016/10/Speisesaal11.jpg"></img></div>
+  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2016/10/Speisesaal12.jpg"></img></div>
+  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2016/10/Speisesaal13.jpg"></img></div>
+  <!-- <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/06/Speisesaal05.jpg"></img></div>
   <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/06/Speisesaal07.jpg"></img></div>
-  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/06/Speisesaal08.jpg"></img></div>
-  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/10/weihnachtsfeier-hero2.jpg"></img></div>
-  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/10/NussknackerJanMeier3.jpg"></img></div>
+  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/06/Speisesaal08.jpg"></img></div> -->
+  <!-- <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/10/weihnachtsfeier-hero2.jpg"></img></div>
+  <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/10/NussknackerJanMeier3.jpg"></img></div> -->
 </div>
 <?php else: ?>
   <?php if ('' != get_the_post_thumbnail()): ?>
@@ -23,7 +27,7 @@
 <div class="pageheadline">
 	<div class="pheadline-inside">
   <?php if (is_page(array('speisesaal'))): ?>
-    <img src="http://dah-bremerhaven.de/wp-content/uploads/2012/11/speisesaal_logo.png" height="2036" width="149" class="speiselogo" alt="">
+    <img src="http://dah-bremerhaven.de/wp-content/uploads/2012/11/speisesaal_logo.png" height="203" width="149" class="speiselogo" alt="" style="width:149px; height:auto;">
   <?php endif ?>
 
 		<h1><?php the_title(); ?></h1>

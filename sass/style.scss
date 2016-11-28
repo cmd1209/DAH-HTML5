@@ -369,6 +369,7 @@ a.slidetrigger{
     -ms-interpolation-mode: bicubic;
   }
 }
+
 .keyvisual{
   overflow: hidden;
   position: relative;
@@ -380,6 +381,7 @@ a.slidetrigger{
     left: 0;
     bottom: 0;
     right: 0;
+    overflow: hidden;
     img{
       width: 100%;
       height: auto;
@@ -390,6 +392,14 @@ a.slidetrigger{
   content: "";
   display: block;
   padding-top: 39%;   /* initial ratio of 1:1*/
+}
+.speisesaalslide{
+  @extend .keyvisual;
+}
+.speisesaalslide:before{
+  content: "";
+  display: block;
+  padding-top: 50%!important;   /* initial ratio of 1:1*/
 }
 .rundgangslider{
   border-bottom: 5px solid $gold;
@@ -435,11 +445,15 @@ a.slidetrigger{
   }
 }
 .flex-direction-nav a{
-  background-image: none;
+  background-color: white!important;
+  border: 2px solid white;
+  border-radius: 100%;
   font-size:70px;
   text-indent: 0;
   font-weight: 700;
   padding: 10px;
+  opacity: 1!important;
+  top: 36%!important;
 }
 .flex-direction-nav  a:visited{
   color: white;
@@ -463,6 +477,7 @@ a.flex-prev{
   content:"Previous";
   color: white;
   left: 0!important;
+  margin-left: 30px!important;
 }
 // #rundgang{
 //   width: 100%;
@@ -808,10 +823,6 @@ aside{
   a:hover{
     color: $red;
   }
-  a[title~="facebook"]:before{
-    content: url("art/F_icon.png");
-    margin-right: 5px;
-  }
   .copyright{
     font-size: 0.8em;
     font-weight: 400;
@@ -819,6 +830,34 @@ aside{
     text-align: center;
   }
 }
+
+.utility{
+  padding: 0 10px 0 0;
+  position: absolute;
+  right: 53px;
+  z-index: 999;
+  display: inline;
+  margin: 0;
+  li{
+    display: inline-block!important;
+  }
+}
+.english{
+  display: block;
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+.facebook{
+  display: block;
+  margin-right: 10px;
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+
 
 /*------------------------------------*\
     Columns
@@ -866,22 +905,29 @@ aside{
   -ms-flex:  1;
   flex:  1;
 }
-// .grid-70, .grid-30, .grid-80{
-//   @media only screen and (max-width:1024px) {
-//   flex-basis: 100%;
-//   -webkit-flex-basis: 100%;
-//   }
-// }
 .cat-date{
   padding: 1em;
   color: $gold;
 }
+#post-9{
+  h3.widget-title{
+    color: white;
+    background-color: $blue;
+    padding: 6px;
+    margin: 25px 0 4px 0;
+  }
+}
 .sonderausstellung{
   width: 100%;
   background-color: $lightsiver;
-  overflow: hidden;
   line-height: 1em;
   position: relative;
+  overflow: hidden;
+  img{
+    width: 50%;
+    float: left;
+    margin-right: 1em;
+  }
   header{
     width: 100%;
     background-color: $blue;
@@ -940,7 +986,7 @@ aside{
       position: relative;
   }
   .title{
-      padding: 10px;
+      padding: 0 10px;
       font-weight: 400;
       font-size: 0.85em;
       overflow: hidden;
@@ -960,6 +1006,18 @@ aside{
   .border{
       border-bottom: 1px solid $silver;
   }
+}
+
+.archive{
+  // width: calc(50% - 10px)!important;
+  // float: left;
+  margin-bottom: 1em;
+  // &:nth-of-type(even){
+  //   margin-left: 10px;
+  // }
+  // &:nth-of-type(odd){
+  //   margin-right: 10px;
+  // }
 }
 .sonderausstellung:first-child{
       h2{
