@@ -26,10 +26,9 @@
 
 <div class="pageheadline">
 	<div class="pheadline-inside">
-  <?php if (is_page(array('speisesaal'))): ?>
-    <img src="http://dah-bremerhaven.de/wp-content/uploads/2012/11/speisesaal_logo.png" height="203" width="149" class="speiselogo" alt="" style="width:149px; height:auto;">
-  <?php endif ?>
-
+  <!-- <?php if (is_page(array('speisesaal'))): ?>
+    <img src="http://dah-bremerhaven.de/wp-content/uploads/2017/03/dah_speisesaal_logo_POS.png" height="727" width="364" class="speiselogo" alt="" style="width:149px; height:auto;">
+  <?php endif ?> -->
 		<h1><?php the_title(); ?></h1>
 		<ul>
       <?php $anchorlinks = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'menu_order')); foreach ($anchorlinks as $page): ?>

@@ -63,6 +63,13 @@
 input,
 textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
 
+// font-family: 'Weissenhof Grotesk Medium'
+// font-family: 'Weissenhof Grotesk Regular'
+// font-family: 'Weissenhof Grotesk Bold'
+// font-family: 'Weissenhof Grotesk Light'
+
+
+
 h1{
     font:400 3.5em 'taz_hair14regular', Arial, sans-serif;
     color: white;
@@ -135,9 +142,9 @@ address{
 }
 .wp-table-reloaded{
     width: 100%;
-    -moz-box-shadow:    0 12px 10px -6px $silver;
-    -webkit-box-shadow: 0 12px 10px -6px $silver;
-    box-shadow:  0 12px 10px -6px $silver;
+    // -moz-box-shadow:    0 12px 10px -6px $silver;
+    // -webkit-box-shadow: 0 12px 10px -6px $silver;
+    // box-shadow:  0 12px 10px -6px $silver;
     border-collapse: none!important;
     border-spacing: 2px!important;
     font-size: 0.95em!important;
@@ -234,6 +241,36 @@ address{
     width: 20%;
     color: $darkgrey !important;
     text-align: left !important;
+    }
+  td{
+    border-right: 1px solid #DBDBDB;
+  }
+  td:last-child{
+    border-right: none;
+  }
+  tr:nth-child(even) {
+    border-bottom: 1px solid #DBDBDB;
+    border-top: 1px solid #DBDBDB;
+    background: #F7F7F7;
+  }
+  tr:nth-child(odd) {
+    background: #FFF;
+  }
+}
+.extra{
+  margin-bottom: 2em;
+  td.column-1{
+    width: 10%;
+    color: $darkgrey;
+    font-weight: bold;
+  }
+  td.column-2, td.column-3, td.column-4{
+    width: 40%;
+    color: $darkgrey !important;
+    text-align: left !important;
+    &::first-line{
+      font-weight: bold;
+    }
     }
   td{
     border-right: 1px solid #DBDBDB;
