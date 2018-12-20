@@ -39,11 +39,11 @@
 </script>
 
 		<script src="<?php echo get_template_directory_uri(); ?>/js/uisearch.js"></script>
-      	<script src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/waypoints.min.js"></script>
     	<script>
       		new UISearch( document.getElementById( 'sb-search' ) );
     	</script>
-
 	</body>
 </html>

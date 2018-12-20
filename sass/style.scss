@@ -1,7 +1,6 @@
 /*
   Theme Name: DAH
 */
-
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/
@@ -65,7 +64,7 @@ hr:last-child{
 }
 
 body {
-font:400 1em/1.6em 'Open Sans', Arial, sans-serif;
+font: 1em/1.6em 'WeissenhofGrotesk-Regular', Arial, sans-serif;
 background-color: #0f0f4b;
 background: -moz-linear-gradient(left,  #000000 0%, #0f0f4b 25%, #0f0f4b 75%, #000000 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(25%,#0f0f4b), color-stop(75%,#0f0f4b), color-stop(100%,#000000)); /* Chrome,Safari4+ */
@@ -94,11 +93,10 @@ img {
 }
 p{
   color: $darkgrey;
-  font-size: 0.95em;
-  font-weight: 300;
-  a, strong{font-weight: 400!important;}
+  font-size: 1em;
+  a, strong{font-family: 'WeissenhofGrotesk-Medium', Arial, sans-serif;}
   a{
-    font-weight: 400;
+    font-family: 'WeissenhofGrotesk-Medium', Arial, sans-serif;
     color:$gold;
   }
   a:hover, a:active {
@@ -131,18 +129,23 @@ input:focus {
   overflow: visible;
 }
 .header {
-  padding: 10px 0 0 0;
+  padding: 0;
   position: relative;
   width: 100%;
+  height: 220px;
+  @media only screen and (max-width:1023px) {
+    height: 200px;
+  }
   @media only screen and (max-width:768px) {
-    height: 80px;
+    height: 94px;
   }
   li{
     display: inline-block;
   }
   a{
-    font:300 1em'taz_semiboldregular', Arial, sans-serif;
+    font: 1em'WeissenhofGrotesk-Medium', Arial, sans-serif;
     color: white;
+    letter-spacing: -0.2px;
     display: inline-block;
     text-transform: uppercase;
   }
@@ -163,7 +166,7 @@ input:focus {
     display: list-item;
   }
   a{
-    font:300 1em'taz_semiboldregular', Arial, sans-serif;
+    font: 1em'WeissenhofGrotesk-Regular', Arial, sans-serif;
     color: $gold;
   }
   a:hover{
@@ -195,20 +198,21 @@ a.slidetrigger{
   }
 }
 #menu-main-nav, #menu-2015-Nav{
-  padding: 50px 20px 0 200px;
+  padding: 0 80px;
   text-align: center;
-  position: relative;
+  position: absolute;
+  bottom: 0;
   margin: 0;
   @media only screen and (max-width:1023px) {
     padding: 100px 0 0 0;
   }
   li{
     position: relative;
-    padding: 8px;
+    padding: 5px;
     // border-right: 1px solid $silver;
   }
   a{
-    font-size: 1.15em;
+    font-size: 1em;
     // font-family: 'Lato', sans-serif;
     @media only screen and (max-width:1280px) {
     font-size: 1em;
@@ -226,10 +230,11 @@ a.slidetrigger{
     z-index: 999;
     display: none;
     position: absolute;
+    left: 50%;
     white-space: nowrap;
-    text-align: left;
-    padding: 10px 0;
-    margin: 8px 0 0 -8px;
+    text-align: center;
+    padding: 5px;
+    transform: translate(-50%,-12px);
     @media only screen and (max-width:768px) {
     display: none;
     }
@@ -335,25 +340,26 @@ a.slidetrigger{
     display: none;
   }
 }
+
 .logo {
   z-index: 100;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 170px;
+  top: 20px;
+  left: 20px;
+  width: 300px;
+  height: auto;
   @media only screen and (max-width:1023px) {
-    width: 100px;
-    height: 85px;
+    width: 225px;
+    height: auto;
     left: 50%;
-    margin: 0 0 0 -50px;
+    transform: translateX(-50%);
   }
 }
 .content{
   overflow: visible;
   display: block;
   width: 100%;
-  border-top: 12px solid $gold;
+  // border-top: 12px solid $gold;
   position: relative;
 }
 .inside{
@@ -374,7 +380,7 @@ a.slidetrigger{
   overflow: hidden;
   position: relative;
   background-color: black;
-  border-bottom: 12px solid $gold;
+  // border-bottom: 12px solid $gold;
   div.slides{
     position: absolute;
     top: 0;
@@ -387,6 +393,16 @@ a.slidetrigger{
       height: auto;
     }
     }
+}
+
+.startkey{
+  height: 600px;
+  @media only screen and (max-width:1023px) {
+    height: 485px;
+  }
+  @media only screen and (max-width:768px) {
+    height: 375px;
+  }
 }
 .keyvisual:before{
   content: "";
@@ -423,7 +439,7 @@ a.slidetrigger{
       margin-bottom: 0;
       text-transform: uppercase;
       font-size: 1.8em!important;
-      font-family: 'taz_lightregular', Arial, sans-serif!important;
+      font-family: 'WeissenhofGrotesk-Regular', Arial, sans-serif;
     }
     .caption{
     color: $darkgrey!important;
@@ -568,7 +584,6 @@ a.flex-prev{
   position: relative;
   background-color: black;
 }
-
 .videoWrapper {
   z-index: 31;
   position: relative;
@@ -586,16 +601,16 @@ a.flex-prev{
   display: none;
   z-index: 40;
   position:fixed;
-  top: 70px;
-  left:50%;
+  top: 0;
+  left: 50%;
   width:125px;
-  margin-left:-660px;
+  transform: translateX(-660px);
   background-color: $gold;
     @media only screen and (max-width:1279px) {
-      margin-left:-570px;
+      transform: translateX(-570px);
     }
     @media only screen and (max-width:1139px) {
-      margin-left:-510px;
+      transform: translateX(-510px);
     }
   ul{
     margin: 0 0 0 -40px;
@@ -668,12 +683,9 @@ a.flex-prev{
 .pageheadline{
   .pheadline-inside{
   background-color: $gold;
-  padding: 8px 40px 12px 40px;
+  padding: 2em 0;
   margin: 0 auto;
   width: 100%;
-  -webkit-box-shadow: inset 0px -21px 30px -10px rgba(50, 50, 50, 0.33);
-  -moz-box-shadow:    inset 0px -21px 30px -10px rgba(50, 50, 50, 0.33);
-  box-shadow:         inset 0px -21px 30px -10px rgba(50, 50, 50, 0.33);
   }
   z-index: 20;
   position: relative;
@@ -698,11 +710,14 @@ a.flex-prev{
     border-right: none;
   }
   a{
-    font-family: 'taz_lightregular', Arial, sans-serif;
-    font-size: 1.25em;
+    font-family: 'WeissenhofGrotesk-Regular', Arial, sans-serif;
+    letter-spacing: -1px;
+    font-size: 1.15em;
     color: white;
     display: inline-block;
     padding: 2px 8px;
+    text-transform: uppercase;
+
   }
   a:hover{
     color: $blue;
@@ -752,12 +767,81 @@ li.archiv-list{
 }
 section{
   background-color: white;
-  border-bottom: 12px solid $gold;
+  // border-bottom: 12px solid $gold;
   width: 100%;
   padding: 40px 90px 40px 90px;
   @media only screen and (max-width:1023px) {
     padding: 10px;
   }
+}
+.studio{
+  p{
+    font-weight: 400!important;
+  }
+  h4{
+    color: black!important;
+    font:300 1.5em 'WeissenhofGrotesk-Medium', Arial, Helvetica, sans-serif;
+    text-align: right;
+  }
+}
+// .menu-item-7876{
+//   &:after{
+//     content: ".";
+//     width: 32px;
+//     height: auto;
+//     display: inline-block;
+//     background: url(http://www.dah-bremerhaven.de//wp-content/themes/DAH-HTML5/art/studio-m-icon.png) no-repeat 0 0;
+//     background-size: contain;
+//   }
+//   a{
+//     text-transform: lowercase!important;
+//   }
+// }
+
+.studio-button{
+  position: absolute;
+  right: -20px;
+  bottom: -60px;
+  width: 95px;
+  height: 95px;
+  z-index: 999;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    width: 85px;
+    height: 85px;
+    bottom: -75px;
+    right: 0;
+  }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    width: 85px;
+    height: 85px;
+    bottom: -50px;
+    right: 0;
+  }
+  &:hover{
+    transition: all 0.5s ease;
+    width: 120px;
+    height: 120px;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.studio-migration-logo{
+  width: 61%;
+  text-align: right;
+}
+.studiomigration{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbd7b2+0,d3e8bd+100 */
+  // background: #dbd7b2; /* Old browsers */
+  // background: -moz-linear-gradient(-45deg,  #dbd7b2 0%, #d3e8bd 100%)!important; /* FF3.6-15 */
+  // background: -webkit-linear-gradient(-45deg,  #dbd7b2 0%,#d3e8bd 100%)!important; /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(135deg,  #dbd7b2 0%,#d3e8bd 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbd7b2', endColorstr='#d3e8bd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: url(http://www.dah-bremerhaven.de//wp-content/themes/DAH-HTML5/art/background-onair.jpg) no-repeat center center;
+  background-size: cover;
 }
 section.darksection{
   border-bottom: 5px solid $gold;
@@ -817,8 +901,9 @@ aside{
       }
   }
   a{
-    font:300 1em'taz_semiboldregular', Arial, sans-serif;
+    font: 1em'WeissenhofGrotesk-Medium', Arial, sans-serif;
     color: $gold;
+    letter-spacing: -0.5px;
   }
   a:hover{
     color: $red;
@@ -832,9 +917,9 @@ aside{
 }
 
 .utility{
-  padding: 0 10px 0 0;
+  padding: 0;
   position: absolute;
-  right: 53px;
+  right: 0;
   z-index: 999;
   display: inline;
   margin: 0;
@@ -1348,9 +1433,8 @@ a img.aligncenter {
 
 .wp-caption .wp-caption-text, figcaption, .caption,
 .gallery-caption, .widget_sp_image-description {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 0.80em;
+  font-family: 'WeissenhofGrotesk-Italic', Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
   line-height: 1.20em;
   color: $gold!important;
   text-align: left;
@@ -1359,7 +1443,6 @@ a img.aligncenter {
   padding:0 4px 5px;
   p{
     color: $gold;
-    font-weight: 400;
   }
 }
 .poop{
@@ -1473,7 +1556,41 @@ a img.aligncenter {
     border-left: 1px solid white;
   }
 }
-
 .screen-reader-text {
      display: none;
+}
+
+// .menu-item-7813{
+//   visibility: hidden;
+// }
+// .menu-item-7813::before{
+//   content: "Studio";
+//   visibility: visible;
+//   color: white;
+// }
+
+.overlay{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(black,0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.music{
+  width: 650px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.music-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $gold;
+  color: white;
 }

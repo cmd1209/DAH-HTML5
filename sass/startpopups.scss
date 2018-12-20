@@ -2,37 +2,37 @@
   overflow: hidden;
   display: block;
   // border-bottom: 1px solid $lightsiver;
-  padding: 1em 0;
+  margin: 0 0 6px 0;
   &:first-child{
     padding-top: 0;
   }
   &:last-child{
     border: none;
+    margin: 0;
   }
   @media only screen and (max-width:1023px) {
     border: none;
   }
 }
 
+
 .startfields{
-  padding: 20px;
+  padding: 0.5em;
   position: relative;
   width: 100%;
   z-index: 100;
   overflow: hidden;
   background-color: white;
   h3{
-    font-size: 1.1em;
+    font-family: 'WeissenhofGrotesk-Regular', Arial, sans-serif;
+    font-size: 1em;
     margin-bottom: 5px;
     line-height: 1.1em;
-    margin-top: 0;
+    margin-top: 3px;
+    letter-spacing: -0.1px;
     @media only screen and (max-width:1023px) {
     font-size: 1.25em;
     }
-  }
-  h3 > a{
-    font-family: 'taz_semilightregular', Arial, sans-serif;
-    color: $gold;
   }
   figure{
     max-width: 100%;
@@ -41,18 +41,15 @@
     }
   }
   p{
-    font-family: 'taz_lightregular', Arial, sans-serif;
-    font-size: 0.95em;
+    font-family: 'WeissenhofGrotesk-Regular', Arial, sans-serif;
+    font-size: 0.9em;
     margin-top: 0.75em;
     margin-bottom: 0!important;
-    line-height: 1.20em;
+    line-height: 1.18em;
+    letter-spacing: -0.1px;
     @media only screen and (max-width:1023px) {
-      font-size: 1.1em;
+      font-size: 1em;
     }
-  }
-  a{
-    font:300 1em'taz_semiboldregular', Arial, sans-serif;
-    color: $gold;
   }
   a:hover{
     background-color: $gold;
@@ -87,9 +84,9 @@
   }
 }
 .fieldimg{
-  width: 30%;
+  width: 42%;
   @media only screen and (max-width: 768px){
-    width: 20%;
+    width: 50%;
   }
   figure{
     padding: 0;
@@ -97,11 +94,11 @@
   }
 }
 .fieldcontent{
-  padding: 0 0 0 0.5em;
-  width: 70%;
+  padding: 6px;
+  width: 58%;
   @media only screen and (max-width: 768px){
-    width: 80%;
-    padding: 20px 0 0 1em ;
+    width: 50%;
+    padding: 1em;
   }
 }
 .post_row{
@@ -231,20 +228,155 @@
 }
 .banner{
   background-color: $red;
+  padding: 1em;
   position: absolute;
-  top: 410px;
+  top: 10px;
+  width: 45%;
   right: -25px;
-  width: 40%;
   text-align: center;
-  padding:0;
   z-index: 9999;
-  transform: rotate(-5deg) skew(-5deg);
+  transform: rotate(-2.5deg) skew(-2.51deg);
   @media only screen and (max-width:1140px) {
-    top: 220px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transform: rotate(0deg) skew(0deg);
   }
   h4{
     color: white;
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 5px 0;
   }
+  p{
+    color: white!important;
+  }
 }
+.flexcontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.start-content{
+  padding: 0.5em;
+  flex: 2;
+  @media only screen and (max-width:1024px) {
+    flex-basis: 100%;
+    order: 2;
+  }
+}
+.story-area{
+  background-size: cover!important;
+  color: white!important;
+  p{
+    color: white!important;
+    font-weight: 600;
+  }
+  #multi-step-form .fw-step-part{
+    background: darken(#A33749, 18%); 
+  }
+  h1.divisions{
+    background-color: darken(#A33749, 18%)!important;
+    span{
+      background-color:darken(#A33749, 18%)!important;
+    }
+  }
+  h2.fw-step-part-title{
+    color: white!important;
+  }
+  h3.widget-title{
+    font-size: 2.1em!important;
+  }
+  h2.hrf-title{
+    background-color:darken(#A33749, 18%)!important;
+    color: white!important;
+    font-weight: 600!important;
+  }
+}
+.story-sidebar{
+  flex: 1;
+  padding: 3em 1em;
+  background-size: cover!important;
+  text-align: center;
+  color: white;
+  min-height: 400px;
+  @media only screen and (max-width:1024px) {
+    flex-basis: 100%;
+    order: 1;
+  }
+  h1,h2,h3,h4,h5{
+    color: white;
+    font-family: 'WeissenhofGrotesk-Regular', Arial, Helvetica, sans-serif;
+  }
+  strong{
+    font-family: 'WeissenhofGrotesk-Bold', Arial, Helvetica, sans-serif;
+  }
+  h2{
+    font-size: 2.1em;
+    line-height: 1.44em;
+    margin: 0 0 3em 0; 
+  }
+  h3{
+    margin: 1em 0;
+  }
+  h4{
+    font-size: 1.66em;
+    line-height: 1.11em;
+  }
+}
+.start-article{
+  text-align: left;
+  margin: 0 0 1em 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  @media only screen and (max-width: 768px){
+    flex-direction: column;
+    padding: 0.5em;
+  }
+}
+.start-article:last-of-type{
+  margin: 0;
+}
+.article-info{
+  flex-basis: 60%;
+  padding: 0 0 0 0.5em;
+  @media only screen and (max-width: 768px){
+    padding: 0.5em 0;
+  }
+}
+.article-image{
+  flex-basis: 40%;
+  width: 100%;
+}
+.article-link{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  &:hover{
+    background-color: rgba($gold, 0.25)!important;
+  }
+}
+.weichnachten-btn{
+  background: #D5C400;
+  border: 2px solid #EDEDED;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: black!important;
+  padding: 0.85em 1.85em;
+  display: inline-block;
+  font-family: 'WeissenhofGrotesk-Regular', Arial, Helvetica, sans-serif;
+}
+.padding0{
+  padding: 0!important;
+}
+
+
+  // font-family: 'WeissenhofGrotesk-Light', Arial, Helvetica, sans-serif
+  // font-family: 'WeissenhofGrotesk-Medium', Arial, Helvetica, sans-serif
+  // font-family: 'WeissenhofGrotesk-Regular', Arial, Helvetica, sans-serif

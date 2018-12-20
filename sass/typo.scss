@@ -2,88 +2,151 @@
 02 Typography -----------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
-@font-face {
-    font-family: 'taz_hair14regular';
-    src: url('Taz/tazhair14_-webfont.eot');
-    src: url('Taz/tazhair14_-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Taz/tazhair14_-webfont.woff') format('woff'),
-         url('Taz/tazhair14_-webfont.ttf') format('truetype'),
-         url('Taz/tazhair14_-webfont.svg#taz_hair14regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// @font-face {
+//     font-family: 'taz_hair14regular';
+//     src: url('Taz/tazhair14_-webfont.eot');
+//     src: url('Taz/tazhair14_-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('Taz/tazhair14_-webfont.woff') format('woff'),
+//          url('Taz/tazhair14_-webfont.ttf') format('truetype'),
+//          url('Taz/tazhair14_-webfont.svg#taz_hair14regular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-}
+// @font-face {
+//     font-family: 'taz_semilightregular';
+//     src: url('Taz/tazsemilight-webfont.eot');
+//     src: url('Taz/tazsemilight-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('Taz/tazsemilight-webfont.woff') format('woff'),
+//          url('Taz/tazsemilight-webfont.ttf') format('truetype'),
+//          url('Taz/tazsemilight-webfont.svg#taz_semilightregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'taz_semilightregular';
-    src: url('Taz/tazsemilight-webfont.eot');
-    src: url('Taz/tazsemilight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Taz/tazsemilight-webfont.woff') format('woff'),
-         url('Taz/tazsemilight-webfont.ttf') format('truetype'),
-         url('Taz/tazsemilight-webfont.svg#taz_semilightregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// @font-face {
+//     font-family: 'taz_lightregular';
+//     src: url('Taz/tazlight-webfont.eot');
+//     src: url('Taz/tazlight-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('Taz/tazlight-webfont.woff') format('woff'),
+//          url('Taz/tazlight-webfont.ttf') format('truetype'),
+//          url('Taz/tazlight-webfont.svg#taz_lightregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'taz_semiboldregular';
+//     src: url('Taz/tazsemibold-webfont.eot');
+//     src: url('Taz/tazsemibold-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('Taz/tazsemibold-webfont.woff') format('woff'),
+//          url('Taz/tazsemibold-webfont.ttf') format('truetype'),
+//          url('Taz/tazsemibold-webfont.svg#taz_semiboldregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//  @font-face {
+//   font-family: 'fontello';
+//   src: url('iconfont/fontello.eot?41320862');
+//   src: url('iconfont/fontello.eot?41320862#iefix') format('embedded-opentype'),
+//        url('iconfont/fontello.woff?41320862') format('woff'),
+//        url('iconfont/fontello.ttf?41320862') format('truetype'),
+//        url('iconfont/fontello.svg?41320862#fontello') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
-}
+/**
+ * @license
+ * MyFonts Webfont Build ID 3351393, 2017-02-27T08:08:08-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed fonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: WeissenhofGrotesk-Bold by Indian Type Foundry
+ * URL: http://www.myfonts.com/fonts/indian-type-foundry/weissenhof-grotesk/bold/
+ * 
+ * Webfont: WeissenhofGrotesk-BoldItalic by Indian Type Foundry
+ * URL: http://www.myfonts.com/fonts/indian-type-foundry/weissenhof-grotesk/bold-italic/
+ * 
+ * Webfont: WeissenhofGrotesk-LightItalic by Indian Type Foundry
+ * URL: http://www.myfonts.com/fonts/indian-type-foundry/weissenhof-grotesk/light-italic/
+ * 
+ * Webfont: WeissenhofGrotesk-Italic by Indian Type Foundry
+ * URL: http://www.myfonts.com/fonts/indian-type-foundry/weissenhof-grotesk/regular-italic/
+ * 
+ * Webfont: WeissenhofGrotesk-Light by Indian Type Foundry
+ * URL: http://www.myfonts.com/fonts/indian-type-foundry/weissenhof-grotesk/light/
+ * 
+ * Webfont: WeissenhofGrotesk-Medium by Indian Type Foundry
+ * URL: http://www.myfonts.com/fonts/indian-type-foundry/weissenhof-grotesk/medium/
+ * 
+ * Webfont: WeissenhofGrotesk-MediumItalic by Indian Type Foundry
+ * URL: http://www.myfonts.com/fonts/indian-type-foundry/weissenhof-grotesk/medium-italic/
+ * 
+ * Webfont: WeissenhofGrotesk-Regular by Indian Type Foundry
+ * URL: http://www.myfonts.com/fonts/indian-type-foundry/weissenhof-grotesk/regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3351393
+ * Licensed pageviews: 10,000
+ * fonts copyright: Copyright 2015 Indian Type Foundry
+ * 
+ * © 2017 MyFonts Inc
+*/
 
-@font-face {
-    font-family: 'taz_lightregular';
-    src: url('Taz/tazlight-webfont.eot');
-    src: url('Taz/tazlight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Taz/tazlight-webfont.woff') format('woff'),
-         url('Taz/tazlight-webfont.ttf') format('truetype'),
-         url('Taz/tazlight-webfont.svg#taz_lightregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'taz_semiboldregular';
-    src: url('Taz/tazsemibold-webfont.eot');
-    src: url('Taz/tazsemibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Taz/tazsemibold-webfont.woff') format('woff'),
-         url('Taz/tazsemibold-webfont.ttf') format('truetype'),
-         url('Taz/tazsemibold-webfont.svg#taz_semiboldregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
- @font-face {
-  font-family: 'fontello';
-  src: url('iconfont/fontello.eot?41320862');
-  src: url('iconfont/fontello.eot?41320862#iefix') format('embedded-opentype'),
-       url('iconfont/fontello.woff?41320862') format('woff'),
-       url('iconfont/fontello.ttf?41320862') format('truetype'),
-       url('iconfont/fontello.svg?41320862#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/332361");
 
-// @import url(http://fonts.googleapis.com/css?family=Lato);
+  
+@font-face {font-family: 'WeissenhofGrotesk-Bold';src: url('fonts/332361_0_0.eot');src: url('fonts/332361_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/332361_0_0.woff2') format('woff2'),url('fonts/332361_0_0.woff') format('woff'),url('fonts/332361_0_0.ttf') format('truetype'),url('fonts/332361_0_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'WeissenhofGrotesk-BoldItalic';src: url('fonts/332361_1_0.eot');src: url('fonts/332361_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/332361_1_0.woff2') format('woff2'),url('fonts/332361_1_0.woff') format('woff'),url('fonts/332361_1_0.ttf') format('truetype'),url('fonts/332361_1_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'WeissenhofGrotesk-LightItalic';src: url('fonts/332361_2_0.eot');src: url('fonts/332361_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/332361_2_0.woff2') format('woff2'),url('fonts/332361_2_0.woff') format('woff'),url('fonts/332361_2_0.ttf') format('truetype'),url('fonts/332361_2_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'WeissenhofGrotesk-Italic';src: url('fonts/332361_3_0.eot');src: url('fonts/332361_3_0.eot?#iefix') format('embedded-opentype'),url('fonts/332361_3_0.woff2') format('woff2'),url('fonts/332361_3_0.woff') format('woff'),url('fonts/332361_3_0.ttf') format('truetype'),url('fonts/332361_3_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'WeissenhofGrotesk-Light';src: url('fonts/332361_4_0.eot');src: url('fonts/332361_4_0.eot?#iefix') format('embedded-opentype'),url('fonts/332361_4_0.woff2') format('woff2'),url('fonts/332361_4_0.woff') format('woff'),url('fonts/332361_4_0.ttf') format('truetype'),url('fonts/332361_4_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'WeissenhofGrotesk-Medium';src: url('fonts/332361_5_0.eot');src: url('fonts/332361_5_0.eot?#iefix') format('embedded-opentype'),url('fonts/332361_5_0.woff2') format('woff2'),url('fonts/332361_5_0.woff') format('woff'),url('fonts/332361_5_0.ttf') format('truetype'),url('fonts/332361_5_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'WeissenhofGrotesk-MediumItalic';src: url('fonts/332361_6_0.eot');src: url('fonts/332361_6_0.eot?#iefix') format('embedded-opentype'),url('fonts/332361_6_0.woff2') format('woff2'),url('fonts/332361_6_0.woff') format('woff'),url('fonts/332361_6_0.ttf') format('truetype'),url('fonts/332361_6_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'WeissenhofGrotesk-Regular';src: url('fonts/332361_7_0.eot');src: url('fonts/332361_7_0.eot?#iefix') format('embedded-opentype'),url('fonts/332361_7_0.woff2') format('woff2'),url('fonts/332361_7_0.woff') format('woff'),url('fonts/332361_7_0.ttf') format('truetype'),url('fonts/332361_7_0.svg#wf') format('svg');}
+ 
+
 
 input,
 textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
 
-// font-family: 'Weissenhof Grotesk Medium'
-// font-family: 'Weissenhof Grotesk Regular'
-// font-family: 'Weissenhof Grotesk Bold'
-// font-family: 'Weissenhof Grotesk Light'
-
-
 
 h1{
-    font:400 3.5em 'taz_hair14regular', Arial, sans-serif;
+    font:400 3em 'WeissenhofGrotesk-Light', Arial, sans-serif;
     color: white;
     text-transform: uppercase;
+    letter-spacing: -2px;
       @media only screen and (max-width: 1023px) {
     font-size: 2.5em;
   }
 }
 h1.divisions{
-    font:300 2em 'taz_lightregular', Arial, sans-serif;
+    font:300 2em 'WeissenhofGrotesk-Light', Arial, sans-serif;
     color: $silver;
     text-transform: uppercase;
     text-align: center;
     background-color: white;
+    letter-spacing: -2px;
     span{
       position: relative;
       background-color: white;
@@ -96,25 +159,26 @@ h1.divisions{
     padding-bottom:0;
   }
 }
+
 h1.article-title{
     margin-top: 30px;
-    font:300 2em 'taz_lightregular', Arial, sans-serif;
+    font: 2em 'WeissenhofGrotesk-Light', Arial, sans-serif;
     color: $gold;
   }
 h2{
-    font-family: 'taz_semilightregular';
-    font-weight: 300;
+    font-family: 'WeissenhofGrotesk-Medium', Arial, Helvetica, sans-serif;
     color: $darkgrey;
     font-size: 1.5em;
 }
 h3, h4, h2.wp-table-reloaded-table-name, .my-calendar-month{
-    font-family: 'taz_semilightregular';
-    font-weight: 300;
+    font-family: 'WeissenhofGrotesk-Medium';
     color: $gold;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 address{
-    font:300 1.75em 'taz_lightregular', Arial, sans-serif;
+    font: 1.75em 'WeissenhofGrotesk-Regular', Arial, sans-serif;
     color: $gold!important;
     padding: 40px;
     text-align: center;

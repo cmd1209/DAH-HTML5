@@ -1,7 +1,7 @@
 .sb-search {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 88px;
 	width: 0%;
 	min-width: 30px;
 	height: 30px;
@@ -14,6 +14,8 @@
     top:0;
   	}
 }
+
+
 
 .sb-search-input {
 	padding-left: 5px;
@@ -78,11 +80,11 @@
 	z-index: -1;
 }
 
-
 .sb-icon-search{
 	margin: 0;
 	color: white;
-	background: $gold;
+	background-color: $gold;
+	padding: 4px;
 	z-index: 90;
 	font-size: 18px;
 	font-family: "fontello", Arial, sans-serif;
@@ -119,7 +121,7 @@ form{
   	-webkit-box-shadow: 0 12px 10px -6px $silver;
   	box-shadow:         0 12px 10px -6px $silver;
 	table{
-		font:300 0.8em/1.6em 'Open Sans', Arial, sans-serif;
+		font:300 0.8em/1.6em 'WeissenhofGrotesk-Regular', Arial, sans-serif;
 		td{
 			padding: 5px;
 		}

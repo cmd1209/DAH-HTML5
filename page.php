@@ -1,5 +1,6 @@
 <a href="#" id="oben"></a>
 <?php get_header(); ?>
+
 <?php if (is_page(array('speisesaal'))): ?>
   <div class="speisesaalslide" id="slideshow">
   <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2016/10/Speisesaal10.jpg"></img></div>
@@ -13,46 +14,61 @@
   <!-- <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/10/weihnachtsfeier-hero2.jpg"></img></div>
   <div class="slides"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/10/NussknackerJanMeier3.jpg"></img></div> -->
 </div>
+<?php elseif (is_page(array('studio-migration'))): ?>
+  <div class="nokeyvisual"> </div>
 <?php else: ?>
   <?php if ('' != get_the_post_thumbnail()): ?>
     <div class="keyvisual">
      <div class="slides"><?php echo get_the_post_thumbnail( $post_id, $size, $attr ); ?></div>
    </div>
  <?php else: ?>
-  <div class="nokeyvisual">
-  </div>
+  <div class="nokeyvisual"> </div>
   <?php endif ?>
 <?php endif ?>
 
-<div class="pageheadline">
-	<div class="pheadline-inside">
-  <!-- <?php if (is_page(array('speisesaal'))): ?>
-    <img src="http://dah-bremerhaven.de/wp-content/uploads/2017/03/dah_speisesaal_logo_POS.png" height="727" width="364" class="speiselogo" alt="" style="width:149px; height:auto;">
-  <?php endif ?> -->
-		<h1><?php the_title(); ?></h1>
-		<ul>
-      <?php $anchorlinks = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'menu_order')); foreach ($anchorlinks as $page): ?>
-      <?php $content = $page->post_content; ?>
-      <li><a href="#<?php echo $page->ID; ?>"><?php echo $page->post_title; ?></a></li>
-    <?php endforeach ?>
-  </ul>
-</div>
-</div>
 
-<div class="stickymenu coolshadow">
-	<nav>
-		<ul>
-			<li><a href="#oben">Oben</a></li>
-     <?php $anchorlinks = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'menu_order')); foreach ($anchorlinks as $page): ?>
-     <?php $content = $page->post_content; ?>
-     <li><a class="nav-link" href="#<?php echo $page->ID; ?>"><?php echo $page->post_title; ?></a></li>
-   <?php endforeach ?>
- </ul>
-</nav>
-</div>
 
-<!-- section -->
-<section role="main">
+<?php if (is_page(array('studio-migration'))): ?>
+    <section role="main" class="studiomigration">
+      <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/studio-migration-logo.svg" alt="studio migration" class="studio-migration-logo"> -->
+<?php else: ?>
+
+  <div class="pageheadline">
+  	<div class="pheadline-inside">
+
+  		<h1><?php the_title(); ?></h1>
+  		<ul>
+        <?php $anchorlinks = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'menu_order')); foreach ($anchorlinks as $page): ?>
+        <?php $content = $page->post_content; ?>
+        <li><a href="#<?php echo $page->ID; ?>"><?php echo $page->post_title; ?></a></li>
+      <?php endforeach ?>
+    </ul>
+  </div>
+  </div>
+
+
+
+
+
+  <div class="stickymenu coolshadow">
+  	<nav>
+  		<ul>
+  			<li><a href="#oben">Oben</a></li>
+       <?php $anchorlinks = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'menu_order')); foreach ($anchorlinks as $page): ?>
+       <?php $content = $page->post_content; ?>
+       <li><a class="nav-link" href="#<?php echo $page->ID; ?>"><?php echo $page->post_title; ?></a></li>
+     <?php endforeach ?>
+   </ul>
+  </nav>
+  </div>
+
+  <section role="main">
+
+<?php endif ?>
+
+
+
+
 	<div class="offset">
 	</div>
 
